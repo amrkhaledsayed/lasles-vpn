@@ -360,8 +360,9 @@ a {
   width: 25rem;
   height: 6rem;
   border-radius: 1rem;
-  color: var(--color-white);
-  background-color: var(--color-bright-red);
+  color: var(--color-bright-red);
+  background-color: var(--color-background);
+  border: 1px var(--color-bright-red) solid;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 2.5rem;
@@ -369,6 +370,11 @@ a {
   padding: 1.75rem;
   text-align:center;
   cursor: pointer;
+
+  &:hover,
+    :visited{
+      background-color: var(--color-bright-red);
+    }
 
   @media (min-width: 600px) and (max-width: 950px) {
     font-size: 2.5rem;
